@@ -1,0 +1,53 @@
+---
+description: Route requests to the user's GitHub-hosted AI skills library. Use when the user names a skill such as clean-code, game-performance, consulting-reply, debug-pro, or ai-prompt-enhance.
+globs:
+alwaysApply: false
+---
+
+# My AI Skills Router for Cursor
+
+统一技能库：
+
+```text
+https://github.com/q1234567890123/my-ai-skills
+```
+
+## Cursor 使用方式
+
+建议把本规则设置为 `Agent Requested`，不要设置为 `Always`。
+
+原因：
+
+- `Always` 会让规则每次都进入上下文。
+- `Agent Requested` 只在用户提到相关 skill 时启用。
+- 本规则只是路由索引，不应该替代真正的 `SKILL.md`。
+
+## 规则
+
+当用户说“使用 xxx skill”时：
+
+1. 只读取对应路径的 `SKILL.md`。
+2. 如需中文，读取同目录 `README.zh.md`。
+3. 不要读取整个仓库。
+4. 不要把整个仓库复制进当前项目。
+5. 默认中文回复。
+
+## 技能索引
+
+```text
+karpathy-guidelines -> coding/karpathy-guidelines/SKILL.md
+karpathy-coding     -> coding/karpathy-coding/SKILL.md
+clean-code          -> coding/clean-code/SKILL.md
+game-coding         -> game-dev/game-coding/SKILL.md
+game-performance    -> game-dev/game-performance/SKILL.md
+short-video-master  -> video-edit/short-video-master/SKILL.md
+confidence-rebuild  -> psychology/confidence-rebuild/SKILL.md
+medical-design      -> aesthetic/medical-design/SKILL.md
+device-material     -> aesthetic/device-material/SKILL.md
+consulting-reply    -> aesthetic/consulting-reply/SKILL.md
+outfit-confidence   -> style/outfit-confidence/SKILL.md
+ai-comic-drama      -> creative/ai-comic-drama/SKILL.md
+debug-pro           -> dev/debug-pro/SKILL.md
+ai-prompt-enhance   -> prompt/ai-prompt-enhance/SKILL.md
+```
+
