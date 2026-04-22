@@ -1,5 +1,21 @@
-# my-ai-skills
+# 项目架构
 
+```text
+my-ai-skills/
+├── README.md                         # 仓库首页，说明项目用途和目录结构
+├── DIRECTORY.zh.md                   # 中文目录说明
+├── adapters/                         # 各 AI 编辑器的接入配置和安装说明
+├── coding/                           # 编程规范、代码质量、AI 编程习惯
+├── game-dev/                         # 游戏开发、Cocos/Unity、玩法与性能优化
+├── video-edit/                       # 短视频剪辑、竖屏内容、节奏卡点
+├── psychology/                       # 自信重塑、外貌焦虑、关系心理、气质提升
+├── aesthetic/                        # 医美美学、医美材料设备、咨询回复
+├── style/                            # 穿搭、体态、表情、个人气质
+├── creative/                         # AI 漫剧、竖屏短剧、角色和分镜创作
+├── dev/                              # 专业调试、BUG 定位、工程排错
+└── prompt/                           # AI 提示词工程、精准指令、Agent 工作流
+```
+# my-ai-skills
 这是我的 AI Skills 统一仓库，用来集中管理不同 AI 编辑器可复用的行业技能。
 
 目标是：**所有技能只在这个 GitHub 仓库维护一份**，然后通过安装、同步或规则路由，让 Claude Code、Cursor、Antigravity、Codex、Trae、Qoder、CodeBuddy 等工具按需使用。
@@ -65,23 +81,6 @@ CodeBuddy   ~/.codebuddy/skills/
 
 对应配置在 `adapters/` 目录里。
 
-## 项目架构
-
-```text
-my-ai-skills/
-├── README.md                         # 仓库首页，说明项目用途和目录结构
-├── DIRECTORY.zh.md                   # 中文目录说明
-├── adapters/                         # 各 AI 编辑器的接入配置和安装说明
-├── coding/                           # 编程规范、代码质量、AI 编程习惯
-├── game-dev/                         # 游戏开发、Cocos/Unity、玩法与性能优化
-├── video-edit/                       # 短视频剪辑、竖屏内容、节奏卡点
-├── psychology/                       # 自信重塑、外貌焦虑、关系心理、气质提升
-├── aesthetic/                        # 医美美学、医美材料设备、咨询回复
-├── style/                            # 穿搭、体态、表情、个人气质
-├── creative/                         # AI 漫剧、竖屏短剧、角色和分镜创作
-├── dev/                              # 专业调试、BUG 定位、工程排错
-└── prompt/                           # AI 提示词工程、精准指令、Agent 工作流
-```
 
 ## 技能目录说明
 
